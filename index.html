@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<script src="server.js"></script>
+
+<body>
+    <div class="overlay"></div>
+    <div class="login-container">
+        <button class="close-button">&times;</button>
+        <!-- <div class="right-section">
+            <img src="login-image.png" alt="Login Illustration" class="login-image">
+        </div> -->
+        <div class="right-section">
+            <div class="login-box">
+                <h3 class="login-title">LOGIN</h3>
+                <div class="dialog-box">
+                    <button class="dialog-option selected" id="email-tab">✉ Email</button>
+                    <button class="dialog-option" id="phone-tab">📱 Phone</button>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="E-mail" onblur="validateEmail()">
+                </div>
+                <p id="email-error" class="error-message">E-mail must be valid</p>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" onblur="validatePassword()">
+                </div>
+                <p id="password-error" class="error-message">Min 6 characters</p>
+                <p class="forgot-password">Don't remember? <a href="#" class="recover" onclick="handleRecoverPassword()" style="color:white;">Recover a password</a></p>
+                <div class="spacer-large"></div>
+                <p class="signup-text">Don't have an account?</p>
+                <a href="#" class="signup-btn">Sign up</a>
+                <button class="signin-btn" id="sign-in-btn" onclick="handleSignIn()">SIGN IN</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
